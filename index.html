@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Passenger Feedback</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header" style="display: flex; align-items: center; gap: 15px; padding-bottom: 10px;">
+    <img src="logo.jpg" alt="Logo" style="width: 200px; height: auto;">
+    <div class="header-text" style="text-align: center;">
+        <h2>INDIAN CUSTOMS</h2>
+        <p>SARDAR VALLABHBHAI PATEL INTERNATIONAL AIRPORT, AHMEDABAD</p>
+    </div>
+</div>
+
+
+
+    <div class="title-bar">
+        Passenger Feedback Form
+    </div>
+    <div class="title-bar">
+        The information provided is voluntary and will be kept confidential.
+    </div>
+
+<form id="feedbackForm">
+
+
+<!-- Passenger Details -->
+<div class="section">
+    <h3>I. Passenger Details (Optional)</h3>
+
+    <div class="row">
+        <label>Name of Passenger:</label>
+        <input type="text" name="name" required placeholder="FirstName LastName">
+
+        <label>Mobile No:</label>
+        <input type="text" name="mobile" required>
+    </div>
+
+    <div class="row">
+        <label>Email ID:</label>
+        <input type="text" name="email" required placeholder="abc@gmail.com">
+
+        <label>Flight No:</label>
+        <input type="text" name="flight">
+    </div>
+
+    <div class="row">
+        <label>Date:</label>
+        <input type="date" name="date" required>
+    </div>
+    
+    <div class="row">
+        <label>Arrival / Departure:</label>
+        <input type="radio" name="arrival_departure" value="Arrival" required> Arrival
+        <input type="radio" name="arrival_departure" value="Departure"> Departure
+    </div>
+</div>
+
+<!-- Behaviour -->
+<div class="section">
+<h3>II.Assessment of Customs Services</h3>
+
+<table>
+<h3>1.Behaviour of Customs Officers</h3>
+<tr>
+<th>Particulars</th>
+<th>Very Good</th>
+<th>Good</th>
+<th>Satisfactory</th>
+<th>Unsatisfactory</th>
+</tr>
+
+<tr>
+<td>Courtesy & Politeness</td>
+<td><input type="radio" name="courtesy" value="Very Good" required></td>
+<td><input type="radio" name="courtesy" value="Good"></td>
+<td><input type="radio" name="courtesy" value="Satisfactory"></td>
+<td><input type="radio" name="courtesy" value="Unsatisfactory"></td>
+</tr>
+
+<tr>
+<td>Professional conduct </td>
+<td><input type="radio" name="professional" value="Very Good" required></td>
+<td><input type="radio" name="professional" value="Good"></td>
+<td><input type="radio" name="professional" value="Satisfactory"></td>
+<td><input type="radio" name="professional" value="Unsatisfactory"></td>
+</tr>
+
+<tr>
+<td>Helpfulness & guidance </td>
+<td><input type="radio" name="helpfulness" value="Very Good" required></td>
+<td><input type="radio" name="helpfulness" value="Good"></td>
+<td><input type="radio" name="helpfulness" value="Satisfactory"></td>
+<td><input type="radio" name="helpfulness" value="Unsatisfactory"></td>
+</tr>
+
+</table>
+
+
+
+<table>
+<h3>2.Experience at Duty Payment Counter (if applicable)</h3>
+<tr>
+<th>Particulars</th>
+<th>Very Good</th>
+<th>Good</th>
+<th>Satisfactory</th>
+<th>Unsatisfactory</th>
+</tr>
+
+<tr>
+<td>Ease of procedure </td>
+<td><input type="radio" name="ease_procedure" value="Very Good" required></td>
+<td><input type="radio" name="ease_procedure" value="Good"></td>
+<td><input type="radio" name="ease_procedure" value="Satisfactory"></td>
+<td><input type="radio" name="ease_procedure" value="Unsatisfactory"></td>
+</tr>
+
+<tr>
+<td>Clarity of information </td>
+<td><input type="radio" name="clarity" value="Very Good" required></td>
+<td><input type="radio" name="clarity" value="Good"></td>
+<td><input type="radio" name="clarity" value="Satisfactory"></td>
+<td><input type="radio" name="clarity" value="Unsatisfactory"></td>
+</tr>
+
+<tr>
+<td>Time taken</td>
+<td><input type="radio" name="time_taken" value="Very Good" required></td>
+<td><input type="radio" name="time_taken" value="Good"></td>
+<td><input type="radio" name="time_taken" value="Satisfactory"></td>
+<td><input type="radio" name="time_taken" value="Unsatisfactory"></td>
+</tr>
+
+</table>
+
+<table>
+<h3>3.Visibility of Instructions & Signage</h3>
+<tr>
+<th>Item</th>
+<th>Yes</th>
+<th>No</th>
+</tr>
+
+<tr>
+<td>Red Channel signage </td>
+<td><input type="radio" name="red_channel" value="Yes" required></td>
+<td><input type="radio" name="red_channel" value="No"></td>
+</tr>
+
+<tr>
+<td>Green Channel signage</td>
+<td><input type="radio" name="green_channel" value="Yes" required></td>
+<td><input type="radio" name="green_channel" value="No"></td>
+</tr>
+
+<tr>
+<td>Baggage declaration instructions</td>
+<td><input type="radio" name="baggage" value="Yes" required></td>
+<td><input type="radio" name="baggage" value="No"></td>
+</tr>
+
+<tr>
+<td>Prohibited/Restricted items info </td>
+<td><input type="radio" name="prohibited" value="Yes" required></td>
+<td><input type="radio" name="prohibited" value="No"></td>
+</tr>
+</table>
+
+</div>
+
+<div class="section">
+<h3>III.Overall Experience</h3>
+
+<table>
+<tr>
+
+<th>Very Good</th>
+<th>Good</th>
+<th>Satisfactory</th>
+<th>Unsatisfactory</th>
+</tr>
+
+<tr>
+
+<td><input type="radio" name="overall" value="Very Good" required></td>
+<td><input type="radio" name="overall" value="Good"></td>
+<td><input type="radio" name="overall" value="Satisfactory"></td>
+<td><input type="radio" name="overall" value="Unsatisfactory"></td>
+</tr>
+</table>
+</div>
+<!-- Remarks -->
+<div class="section">
+<h3>IV. Suggestions / Remarks</h3>
+<textarea name="remarks"></textarea>
+</div>
+
+<div class="submit-area">
+<button type="submit">Submit Feedback</button>
+</div>
+
+</form>
+
+<p class="footer">
+Thank you for your valuable feedback.<br>
+Customs is committed to safe, secure and facilitative passenger movement.
+</p>
+
+</div>
+
+
+
+<script>
+const scriptURL = "https://script.google.com/macros/s/AKfycbwpKkZYKKD-NCawi0jqRl01_bZu9xu0Hupw_NbjJnQ3SpbQ1bf-5eCCcoGPhDfxMc9Y/exec";  
+const form = document.getElementById("feedbackForm");
+
+
+form.addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  fetch(scriptURL, {
+    method: "POST",
+    body: new FormData(form)
+  })
+  .then(res => res.text())
+  .then(() => {
+    alert("Form submitted successfully");
+    form.reset();
+  })
+  .catch(error => alert("Error submitting form"));
+});
+
+</script>
+
+</body>
+</html>
